@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>镇江醋</title>
+    <style>
+        body,p,h1,h2,h3,h4,h5,h6,ul,li{
+            padding:0;
+            margin:0;
+        }
+        ul{
+            list-style:none;
+        }
+        a{
+            text-decoration:none;
+        }
+        body{
+            width:1000px;
+            margin:0 auto;
+            padding: 0 10px;
+            font-size:14px;
+            text-align:justify;
+            box-sizing:border-box;
+            background:rgba(41,98,137,0.1);
+        }
+        #header{
+            margin:50px 0 20px 0;
+            line-height:30px;
+        }
+        #header h1{
+            text-align:center;
+        }
+        #header p{
+            text-indent:25px;
+            margin-top:10px;
+        }
+        #content{
+            text-align:center;
+            margin:30px 0;
+        }
+        #content>#car{
+            margin:0 auto;
+            overflow:hidden;
+            width:400px;
+        }
+        #content #imgs{
+            width:3200px;
+            height:300px;
+            transition:all 0.5s linear;
+        }
+        #content #imgs:after{
+            content:"";
+            display:block;
+            clear:both;
+        }
+        #content #imgs>img{
+            width:400px;
+            height:300px;
+            float:left
+        }
+        #content>.bar{
+            width:50%;
+            position:relative;
+            top:0
+        }
+        #content>.barX{
+            width:50%;
+            position:fixed;
+        }
+        #content>#bar ul{
+            display:flex;
+            justify-content:space-between;
+        }
+        #content>#bar ul>li{
+            display:inline-block;
+            margin:10px 0;
+            padding:5px;
+            width:16%;
+            border:1px solid #777;
+            box-shadow:0 0 2px #666;
+            border-radius:10px;
+            text-align:center;
+        }
+        #content>#bar ul>li>a{
+            display:inline-block;
+            width:100%;
+            border-radius:10px;
+            padding:5px 0;
+            color:#fff;
+            background:#0E0000;
+            transition:all 0.3s ease-in;
+        }
+        #content>#bar ul>li>a:hover{
+            background:rgba(14,0,0,0.8);
+        }
+        #content>#bar .change:before{
+            content:"全展开";
+        }
+        #content>#bar .changeX:before{
+            content:"半展开"
+        }
+        #content>.intro{
+            margin:25px 0;
+        }
+        #content>.intro>.intro-item{
+            padding:35px 30px 20px;
+            margin:35px 0 20px;
+            border-bottom:1px solid #777;
+            box-shadow:0 0 2px #666;
+            border-radius:30px;
+            position:relative;
+            transition:top 0.5s ease-in;
+        }
+        #content>.intro>.intro-item>.item,#content>.intro>.intro-item>.comb{
+            text-align:left;
+            text-indent:26px;
+            line-height:30px;
+            font-size:16px;
+            transition:all 0.3s linear;
+        }
+        #content>.intro>.intro-item>.item p+p{
+            margin-top:10px;
+        }
+        #content>.intro>.intro-item>button{
+            padding:5px 17px 5px 20px;
+            letter-spacing:3px;
+            background:#783716;
+            color:#fff;
+            font-size:18px;
+            outline:none;
+            border:1px solid #777;
+            border-radius:30px;
+            position:absolute;
+            top:-18px;
+            left:7%;
+            cursor:pointer;
+        }
+        #content>.intro>.intro-item>.comb{
+            overflow:hidden;
+        }
+    </style>
+</head>
+<body>
+<header id="header">
+    <h1>镇江醋</h1>
+    <p>
+        镇江醋是江苏镇江传统名产。《中国医学大典》载：“醋，以江苏镇江为最佳”。
+        镇江香醋，在中国诸多醋品中别具一格，它色、香、酸、醇、浓俱全，居四大名醋之冠。
+        尝一口，酸而味鲜，香而微甜，不涩，存放愈久，味道愈醇，而且不会变质。这就是“三怪谣”中的
+        “香醋摆不坏”。
+    </p>
+</header>
+<section id="content">
+    <div id="car">
+        <div id="imgs">
+            <img src="1.jpg" alt=""/>
+            <img src="2.jpg" alt=""/>
+            <img src="3.jpeg" alt=""/>
+            <img src="4.jpeg" alt=""/>
+            <img src="5.jpg" alt=""/>
+            <img src="6.jpg" alt=""/>
+            <img src="7.jpg" alt=""/>
+            <img src="1.jpg" alt=""/>
+        </div>
+    </div>
+    <div id="bar" class="bar">
+        <ul>
+            <li><a href="#">简介</a></li>
+            <li><a href="#">特点</a></li>
+            <li><a href="#">食用</a></li>
+            <li><a href="#">博物馆</a></li>
+            <li><a href="#" class="changeX"></a></li>
+        </ul>
+    </div>
+    <div class="intro">
+        <div class="intro-item">
+            <button>简介</button>
+            <div class="item">
+                <p>
+                    镇江香醋具有得天独厚的地理环境与独特精湛的酿造工艺。镇江香醋用料极其考究，选用江南
+                    地区优质糯米为主要原料，采用优良的酸醋菌种，经过固体分层发酵及酿酒、制醅、淋醋三大\
+                    过程[1]  ，40多道工序，历时70多天精制而成，再经6-12个月的储存期，然后才能包装出厂。
+                    镇江广为流传的“杜康造酒儿造醋”的民间传说，为镇江香醋蒙上了神奇的色彩。
+                </p>
+                <p>
+                    杜康，中国古代传说中的夏代国君，姒姓。夏王相的儿子，母亲为有仍氏（今山东省微山县）
+                    人。据民间传说和历史资料记载，少康又名杜康，今陕西白水县人，夏朝人，是夏朝的第五位
+                    国王。杜康是中国粮食酿酒的鼻祖，后作为美酒代称。曹操《短歌行》有云——“慨当以慷，
+                    忧思难忘。何以解忧，唯有杜康。”
+                </p>
+            </div>
+        </div>
+        <div class="intro-item">
+            <button>特点</button>
+            <div class="item">
+                <img src="1.jpg" alt="" style="width:150px;float:left;"/>
+                <p>
+                    镇江醋，享誉海外。具有"色、香、酸、醇、浓"的特点，"酸而不涩，香而微甜，色浓味鲜"，
+                    多次获得国内外的嘉奖。存放时间越久，口味越香醇。这是因为它具有得天独厚的地理环境
+                    与独特的精湛工艺。镇江香醋以优质糯米为主要原料，采用优良的酸醋菌种，经过固体分层
+                    发酵及酿酒、制醅、淋醋三大过程，40多道工序，历时70多天精制而成，再经6-12个月储存期，
+                    然后才出厂。
+                </p>
+            </div>
+        </div>
+        <div class="intro-item">
+            <button>食用</button>
+            <div class="item">
+                <p>
+                    镇江香醋用以拌冷盘，溜素菜，烹鱼肉，炖鸡鸭，可提味增香，去腥解腻，开胃生津，
+                    确为极佳的调味品。被国内外誉为"醋中上品"。
+                </p>
+                <p>
+                    镇江醋又称镇江香醋。“香”字道明镇江醋比起其他种类的醋来说，重点在有一种独特的香气。
+                    镇江醋属于黑醋/乌醋。
+                </p>
+                <p>
+                    镇江醋影响到当地饮食。镇江地区的食品以“肴、点、面”驰名。“肴”是肴肉，“点”是汤包、
+                    蒸饺、烧卖、干丝等点心，“面”是用肴汤为底煮出的面，又称“锅盖面”。当地人煮这些菜肴时，
+                    多以镇江醋沾滴浇淋，镇江醋亦为日常煮食的常用调味品，或是作为佐膳汁料，其中一种是在吃大
+                    闸蟹时，蘸上加入姜丝的镇江醋，以中和蟹的寒性。
+                </p>
+            </div>
+        </div>
+        <div class="intro-item">
+            <button>博物馆</button>
+            <div class="item">
+                <p>
+                    中国镇江文化博物馆毗邻丹徒新城恒顺工业园，占地面积30多亩，建筑面积4000多平米，
+                    是国内第一座由企业出资建设的主题性醋文化博物馆。该博物馆由具有江南民居特色的群落
+                    建筑组成，分醋史厅、老作坊、陈列厅及体验厅，采用声、光、电等现代表现形式，向来宾
+                    和游客全面展示醋文化，解读醋文化、品味醋文化，是集文化遗产保护、休闲娱乐、科普教
+                    育、工业旅游等于一体的展示窗口。
+                </p>
+                <video controls muted poster="5.jpg" preload="metadata" style="width:50%">
+                    <source src="1.avi"></source>
+                    <source src="2.mp4"></source>
+                </video>
+                <p>
+                    镇江醋文化博物馆分醋史馆、老作坊、陈列馆三大主体展馆，以及一个体验馆。
+                </p>
+                <p>
+                    除了赏花，爬山，看美景。镇江中国醋文化博物馆景点介绍，别有一番风趣。在“青砖小瓦马
+                    头墙，回廊挂落花格窗”的江南民居式建筑内，为您全面展示世界和中国的食醋起源及流派
+                    分布，实景呈现传统香醋制作全过程。
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    var intro=document.querySelector("#content>.intro");
+    var items=intro.querySelectorAll(".intro-item>.item");
+    var itemsH=[];
+    function setH(){
+        for(var i= 0,len=items.length;i<len;i++){
+            var item=items[i];
+            item.style.height=item.offsetHeight+"px";
+            itemsH[i]=item.offsetHeight;
+        }
+    }
+    setH();
+    intro.onclick=function(e){
+        if(e.target.nodeName=="BUTTON"){
+            var btn= e.target;
+        }else{
+            return;
+        }
+        var next=btn.nextElementSibling;
+        setIntro(next);
+    }
+    function setIntro(elem){
+        elem.className=elem.className=="comb"?"item":"comb";
+        if(elem.className=="comb"){
+            elem.style.height=0;
+        }else{
+            var i=findIndex(elem,items);
+            elem.style.height=itemsH[i]+"px";
+        }
+    }
+    function findIndex(elem,elems){
+        for(var i=0,len=elems.length;i<len;i++){
+            if(elems[i]==elem){
+                return i;
+            }
+        }
+    }
+    var bar=document.getElementById("bar");
+    var as=bar.querySelectorAll("ul>li>a");
+    bar.onclick=function(e){
+        if(e.target.nodeName=="A"){
+            var a=e.target;
+        }else{
+            return;
+        }
+        var i=findIndex(a,as);
+        setBar(i,"comb","item");
+    }
+    function setBar(i,name1,name2){
+        if(i==as.length-1){
+            return;
+        }
+        items[i].className=name1;
+        setIntro(items[i]);
+        for(var t=0,len=items.length;t<len;t++){
+            if(items[t]!=items[i]){
+                items[t].className=name2;
+                setIntro(items[t]);
+            }
+        }
+    }
+    bar.querySelector("ul>li:last-child>a").onclick=function(){
+        this.className=this.className=="change"?"changeX":"change";
+        if(this.className=="changeX"){
+            setBar(0,"comb","item");
+        }else{
+            setBar(0,"comb","comb");
+        }
+    }
+    var imgs=document.getElementById("imgs");
+    var childs=imgs.children;
+    var numb=0;
+    function move(){
+        var timer=setTimeout(function(){
+            if(numb<childs.length-1){
+                numb++;
+                imgs.style.marginLeft=-numb*400+"px";
+                move();
+            }else {
+                imgs.style.transition = "none";
+                imgs.style.marginLeft=0;
+                numb = 1;
+                setTimeout(function(){
+                    imgs.style.transition = "all 0.5s linear";
+                    imgs.style.marginLeft=-numb*400+"px";
+                },50);
+                move();
+            }
+        },2000);
+    }
+    move();
+    window.onscroll=function(){
+        var scrollTop=document.body.scrollTop || document.documentElement.scrollTop;
+        if(scrollTop>=intro.offsetTop-25){
+            bar.className="barX";
+            bar.style.zIndex=10;
+        }else{
+            bar.className="bar";
+        }
+    }
+</script>
+</body>
+</html>
